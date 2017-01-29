@@ -1,8 +1,8 @@
 /**
- *  USERREFACTOR
+ *  USER-REFACTOR
  *
- * 
- * @module userRefactor
+ *
+ * @module user-refactor
  * @license MIT
  */
 

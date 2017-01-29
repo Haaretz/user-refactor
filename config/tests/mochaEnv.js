@@ -5,14 +5,14 @@ require("babel-register")({
   ignore: /node_modules\/(?!htz.*).*/
 });
 require('jsdom-global')();
-
+require('node-fetch'); //polyfill (not really) window.fetch
 
 const chai = require('chai'),
   sinonChai = require('sinon-chai'),
-  chaiDirty = require('dirty-chai'),
+  // chaiDirty = require('dirty-chai'), // disabled -see below
   chaiAsPromised = require("chai-as-promised");
 global.expect = chai.expect;
 global.sinon = require('sinon');
 chai.use(sinonChai);
 chai.use(chaiAsPromised);
-chai.use(chaiDirty); //should come last
+// chai.use(chaiDirty); //should come last // no typescript definition and I don't feel like writing one today

@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+dist
+.idea
+node_modules
+.awcache
+.tmp
+.nyc_output
